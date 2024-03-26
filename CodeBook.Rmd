@@ -1,11 +1,10 @@
 
-# CodeBook
-### for Peer Reviewed Exercise 4, Getting and Cleaning Data Course, Data Science Specialization, Jonhs Hopkins University, Coursera
+## CodeBook for Peer Reviewed Exercise 4, Getting and Cleaning Data Course, Data Science Specialization, Jonhs Hopkins University, Coursera
 
  Hi there and welcome!
  I am, as requested, providing a Markdown file with data and variable descriptions. However, in my script and README file you can find comprehensive comments on getting, cleaning and processing the data as requested by the exercise, so it may be a better description on how I handled the task. That said, let us proceed.
  
-###Data
+### Data
 
 The data used on this project was collected from the accelerometers from the Samsung Galaxy S smartphone.
 The source of the data consists on a folder called UCI HAR Dataset, which is the single folder inside the zip file provided for this exercise. The same zip folder and data may be downloaded from the following site: "http://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones".
@@ -17,21 +16,31 @@ Within each folder, you can find 3 files, one starting with "X_", corresponding 
 ### Key objects
 
 X_train_ <- Data from the training folder
+
 X_test_ <- Data from the test folder
+
 X_all_ <- merged data from the training and test folder
+
 feature_vector <- authors' expressions for the data column names. Co-opted for my analysis.
+
 X_all_cn <- Merged data with the column names. No subject or activity label.
+
 mean_std_X_all_ <- subset of data including only means and standard deviations, as asked. Still not labeled by subject or activity.
+
 subject_all_labels <- Decoded subject labels.
+
 Y_all_labels <- Activity labels, decoded (into integers) and then transformed (according with the authors description).
+
 mean_std_dataset_final <- Subject and Activity-labeled subset of data, with all the means and standard deviations from the merged dataset.
+
 mean_std_DT <- Mean and standard deviation data, altered to a data table format (as per the data.table library)
+
 averages_mean_std <- Data frame with the requested averages of mean and standard deviation values.
 
 ### Libraries
 data.table
 
-###Data Citation
+### Data Citation
 If used for any professional purpose, please cite the authors:
 Reyes-Ortiz,Jorge, Anguita,Davide, Ghio,Alessandro, Oneto,Luca, and Parra,Xavier. (2012). Human Activity Recognition Using Smartphones. UCI Machine Learning Repository. https://doi.org/10.24432/C54S4K.
 
